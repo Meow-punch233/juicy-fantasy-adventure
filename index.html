@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juicy 的奇幻冒险 · 星页弹珠</title>
+<style>
+  :root{
+    --ink:#0e1b17; --panel:#142822; --gold:#ecc777; --cream:#f4e8bb;
+    --mint:#b6d295; --muted:#839e8c; --line:#2f4a3a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ink);color:var(--cream);
+    font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;line-height:1.7}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  header{padding:54px 0 34px;border-bottom:1px solid var(--line)}
+  .logo{width:340px;max-width:80%;display:block;margin-bottom:18px;image-rendering:pixelated}
+  h1{font-size:34px;margin:0 0 8px;color:var(--gold);letter-spacing:1px}
+  .sub{color:var(--mint);font-size:16px;margin:0}
+  .lead{margin-top:22px;font-size:16px;color:#cdd7c2;max-width:760px}
+  .tag{display:inline-block;border:1px solid var(--line);border-radius:20px;
+    padding:4px 14px;margin:18px 8px 0 0;font-size:13px;color:var(--muted)}
+  section{padding:44px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:24px;color:var(--gold);margin:0 0 20px}
+  .videos{display:grid;gap:28px}
+  .vid{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .vid .head{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;
+    justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+  .vid h3{margin:0;font-size:17px;color:var(--cream)}
+  .vid .meta{font-size:13px;color:var(--muted)}
+  video{width:100%;display:block;background:#000}
+  .worlds{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .card img{width:100%;display:block;image-rendering:pixelated}
+  .card .body{padding:14px 16px}
+  .card h3{margin:0 0 6px;font-size:16px;color:var(--gold)}
+  .card p{margin:0;font-size:13px;color:#bfcbb8}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px}
+  .box h3{margin:0 0 10px;color:var(--gold);font-size:16px}
+  .box ul{margin:0;padding-left:18px;color:#cdd7c2;font-size:14px}
+  .box li{margin:6px 0}
+  .creed{background:#0b1613;border-left:4px solid var(--gold);padding:18px 22px;
+    font-size:15px;color:var(--cream);border-radius:0 8px 8px 0}
+  footer{padding:30px 0 60px;color:var(--muted);font-size:13px}
+  @media(max-width:680px){.grid2{grid-template-columns:1fr}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <img class="logo" src="screens/juicy-title.png" alt="JUICY 像素艺术字">
+  <h1>Juicy 的奇幻冒险 · 星页弹珠</h1>
+  <p class="sub">五本故事书 · 一只追着光跑的猫 · 把没人再玩、也没人记得的故事玩回来</p>
+  <p class="lead">一款横向旅行探索 + 弹珠操作的像素风游戏。从午睡的书堆跌入书中世界，穿过森林、云海、发条城、雨港与星图馆，用玩心把被遗忘的世界一点点点亮。</p>
+  <div>
+    <span class="tag">Godot 4 原生开发</span><span class="tag">五世界连续游玩</span>
+    <span class="tag">PixelFX 像素特效</span><span class="tag">8-bit 音乐</span>
+  </div>
+  <p style="margin-top:24px"><a href="game/gh-export.html" style="display:inline-block;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none;padding:13px 28px;border-radius:8px;font-size:16px">▶ 直接在浏览器里玩完整游戏</a></p>
+  <p style="font-size:12px;color:var(--muted);margin-top:8px">首次加载约 22MB，请稍候并允许 Service Worker；建议电脑浏览器 + 键鼠。</p>
+</header>
+
+<section>
+  <h2>动画合集（可在线预览）</h2>
+  <div class="videos">
+    <div class="vid"><div class="head"><h3>OP · 开场</h3><span class="meta">21 秒 · 午睡 → 发光球 → 五世界掠过 → 标题</span></div>
+      <video src="videos/OP-开场.mp4" controls preload="metadata"></video></div>
+    <div class="vid"><div class="head"><h3>四段鱼咬尾过场</h3><span class="meta">32 秒 · 守护者递信物 → 信物绕球 → 追入下一本书</span></div>
+      <video src="videos/过场-四章合集.mp4" controls preload="metadata"></video></div>
+    <div class="vid"><div class="head"><h3>EP · 大结局</h3><span class="meta">43 秒 · 五章回望 → 星座 → 猫爪印 → 立意揭晓</span></div>
+      <video src="videos/EP-大结局.mp4" controls preload="metadata"></video></div>
+  </div>
+</section>
+
+<section>
+  <h2>五个世界</h2>
+  <div class="worlds">
+    <div class="card"><img src="screens/world-forest.png" alt="茸光森林"><div class="body"><h3>第一章 · 茸光森林</h3><p>苔绿与蜂蜜金的森林绘本。救灯蛾、寻书页、唤醒树心；孢子多球与菌帽藤链。</p></div></div>
+    <div class="card"><img src="screens/world-cloud.png" alt="浮糖云海"><div class="body"><h3>第二章 · 浮糖云海</h3><p>奶油云与粉彩梦境。低重力泡泡暂存弹珠，集中释放；云鲸与糖晶风暴。</p></div></div>
+    <div class="card"><img src="screens/world-clock.png" alt="铜铃发条城"><div class="body"><h3>第三章 · 铜铃发条城</h3><p>黄铜蒸汽工坊。磁力导轨与旋转机关，路线规划重于无目标碰撞。</p></div></div>
+    <div class="card"><img src="screens/world-rain.png" alt="霓虹雨港"><div class="body"><h3>第四章 · 霓虹雨港</h3><p>雨夜赛博街机。按序点亮电路节点，电弧连锁叠加倍率，照亮灯塔。</p></div></div>
+    <div class="card"><img src="screens/world-starmap.png" alt="倒悬星图馆"><div class="body"><h3>终章 · 倒悬星图馆</h3><p>深空图书馆。成对传送门与重力翻转，四章能力综合，为空白之书写下结局。</p></div></div>
+  </div>
+</section>
+
+<section>
+  <h2>玩法与设计</h2>
+  <div class="grid2">
+    <div class="box"><h3>核心循环</h3><ul>
+      <li>Juicy 自动向前奔跑，途中参与剧情互动</li>
+      <li>停下用爪子擦亮弹珠机，蓄力发射、左右挡板接球</li>
+      <li>碰撞释放星屑，点亮枯树、桥梁、街灯与星空</li>
+      <li>升级能力、修复书页，继续奔向下一段旅程</li>
+    </ul></div>
+    <div class="box"><h3>系列特色</h3><ul>
+      <li>五世界各自独立的色板、机关、音乐动机与 X 技能</li>
+      <li>鱼咬尾叙事：每章守护者留下信物，球滚进下一本书</li>
+      <li>逐像素手绘 JUICY 艺术字与文泉驿点阵 UI 字体</li>
+      <li>完整 OP、四段过场、EP 大结局，均可跳过</li>
+    </ul></div>
+  </div>
+  <p class="creed" style="margin-top:22px">遗忘的风，只会吹走没人再玩、也没人记得的故事。<br>只要还有一只猫愿意追着光跑，<br>被点亮的世界就会一直被记得，故事就永远不会写完。</p>
+</section>
+
+<footer>2026 Qoder 高校创造力大赛 · 作品展示页 · Juicy 的奇幻冒险</footer>
+</div>
+</body>
+</html>
